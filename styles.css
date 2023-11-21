@@ -1,0 +1,29 @@
+.main-header-content {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  z-index: 1;
+}
+
+.main-header-cto-button {
+  width: fit-content;
+  padding: 15px 55px;
+
+  background: none;
+  border: 5px solid blueviolet;
+  border-radius: 50px;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media (hover: hover) {
+  body {
+    background-color: red;
+  }
+}
