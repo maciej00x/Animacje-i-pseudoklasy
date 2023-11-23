@@ -2,10 +2,265 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>TheBox</title>
   </head>
   <body>
-    <button class="main-header-content">CONTACT US TODAY!</button>
+    <!-- --- NAVIGATION --- -->
+    <nav class="navigation">
+      <div class="container navigation-content">
+        <img
+          class="company-logo"
+          src="/assets/logo.png"
+          alt="Company Logo - The Box"
+        />
+        <ul class="nav-items-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item"><a href="#about-us">About Us</a></li>
+          <li class="nav-item">Projects</li>
+          <li class="nav-item disabled-nav-item">Services</li>
+          <li class="nav-item cto-nav-item">Contact Us</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- --- HEADER --- -->
+    <header class="main-header">
+      <div class="container main-header-content">
+        <h1 class="main-header-heading">Building things is our mission.</h1>
+        <button class="main-header-cto-button">CONTACT US TODAY!</button>
+      </div>
+      <div class="main-header-overlay"></div>
+    </header>
+
+    <main>
+      <!-- --- OUR REPUTATION SECTION --- -->
+      <section class="container section our-reputation-section">
+        <h2 class="section-heading-h2">Our Reputation</h2>
+        <div class="reputation-tiles">
+          <div class="reputation-tile new-reputation">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M35 13.3333C35.884 13.3333 36.7319 13.6845 37.357 14.3096C37.9821 14.9348 38.3333 15.7826 38.3333 16.6667V23.3333C38.3333 24.2174 37.9821 25.0652 37.357 25.6904C36.7319 26.3155 35.884 26.6667 35 26.6667H33.23C32.8236 29.8888 31.2554 32.852 28.8195 35C26.3837 37.148 23.2476 38.3333 20 38.3333V35C22.6521 35 25.1957 33.9464 27.071 32.0711C28.9464 30.1957 30 27.6522 30 25V15C30 12.3478 28.9464 9.80429 27.071 7.92893C25.1957 6.05357 22.6521 5 20 5C17.3478 5 14.8043 6.05357 12.9289 7.92893C11.0535 9.80429 9.99996 12.3478 9.99996 15V26.6667H4.99996C4.1159 26.6667 3.26806 26.3155 2.64294 25.6904C2.01782 25.0652 1.66663 24.2174 1.66663 23.3333V16.6667C1.66663 15.7826 2.01782 14.9348 2.64294 14.3096C3.26806 13.6845 4.1159 13.3333 4.99996 13.3333H6.76996C7.17668 10.1115 8.74509 7.14878 11.1809 5.00112C13.6167 2.85346 16.7525 1.66846 20 1.66846C23.2474 1.66846 26.3832 2.85346 28.819 5.00112C31.2548 7.14878 32.8232 10.1115 33.23 13.3333H35ZM12.9333 26.3083L14.7 23.4817C16.2884 24.4767 18.1256 25.003 20 25C21.8743 25.003 23.7115 24.4767 25.3 23.4817L27.0666 26.3083C24.9487 27.6352 22.4992 28.3372 20 28.3333C17.5007 28.3372 15.0512 27.6352 12.9333 26.3083Z"
+                fill="#F9995D"
+              />
+            </svg>
+            <h4 class="tile-heading">Best Services</h4>
+            <p class="tile-description">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+            <p class="new-reputation-text">(new reputation)</p>
+            <div class="new-reputation-dot"></div>
+          </div>
+          <div class="reputation-tile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M35 13.3333C35.884 13.3333 36.7319 13.6845 37.357 14.3096C37.9821 14.9348 38.3333 15.7826 38.3333 16.6667V23.3333C38.3333 24.2174 37.9821 25.0652 37.357 25.6904C36.7319 26.3155 35.884 26.6667 35 26.6667H33.23C32.8236 29.8888 31.2554 32.852 28.8195 35C26.3837 37.148 23.2476 38.3333 20 38.3333V35C22.6521 35 25.1957 33.9464 27.071 32.0711C28.9464 30.1957 30 27.6522 30 25V15C30 12.3478 28.9464 9.80429 27.071 7.92893C25.1957 6.05357 22.6521 5 20 5C17.3478 5 14.8043 6.05357 12.9289 7.92893C11.0535 9.80429 9.99996 12.3478 9.99996 15V26.6667H4.99996C4.1159 26.6667 3.26806 26.3155 2.64294 25.6904C2.01782 25.0652 1.66663 24.2174 1.66663 23.3333V16.6667C1.66663 15.7826 2.01782 14.9348 2.64294 14.3096C3.26806 13.6845 4.1159 13.3333 4.99996 13.3333H6.76996C7.17668 10.1115 8.74509 7.14878 11.1809 5.00112C13.6167 2.85346 16.7525 1.66846 20 1.66846C23.2474 1.66846 26.3832 2.85346 28.819 5.00112C31.2548 7.14878 32.8232 10.1115 33.23 13.3333H35ZM12.9333 26.3083L14.7 23.4817C16.2884 24.4767 18.1256 25.003 20 25C21.8743 25.003 23.7115 24.4767 25.3 23.4817L27.0666 26.3083C24.9487 27.6352 22.4992 28.3372 20 28.3333C17.5007 28.3372 15.0512 27.6352 12.9333 26.3083Z"
+                fill="#F9995D"
+              />
+            </svg>
+            <h4 class="tile-heading">Best Teams</h4>
+            <p class="tile-description">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+          <div class="reputation-tile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M36.3167 28.4333L27.0667 19.1833L29.6833 16.5667L23.4333 10.3167L20.8167 12.9333L11.5667 3.68332L3.68335 11.5667L12.9333 20.8167L5.00002 28.75V35H11.25L19.1833 27.0667L28.4333 36.3167L36.3167 28.4333V28.4333ZM15.3 18.45L8.40002 11.5667L11.5667 8.39999L13.6833 10.5167L11.7 12.5L14.05 14.85L16.0333 12.8667L18.45 15.2833L15.3 18.45V18.45ZM21.55 24.7L24.7167 21.5333L27.1334 23.95L25.15 25.9333L27.5 28.2833L29.4833 26.3L31.6 28.4167L28.4333 31.5833L21.55 24.7V24.7ZM25.2217 8.53832L29.4517 4.30665L35.6983 10.5533L31.4684 14.785L25.2217 8.53832Z"
+                fill="#F9995D"
+              />
+            </svg>
+            <h4 class="tile-heading">Best Designs</h4>
+            <p class="tile-description">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+          <div class="reputation-tile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M35 13.3333C35.884 13.3333 36.7319 13.6845 37.357 14.3096C37.9821 14.9348 38.3333 15.7826 38.3333 16.6667V23.3333C38.3333 24.2174 37.9821 25.0652 37.357 25.6904C36.7319 26.3155 35.884 26.6667 35 26.6667H33.23C32.8236 29.8888 31.2554 32.852 28.8195 35C26.3837 37.148 23.2476 38.3333 20 38.3333V35C22.6521 35 25.1957 33.9464 27.071 32.0711C28.9464 30.1957 30 27.6522 30 25V15C30 12.3478 28.9464 9.80429 27.071 7.92893C25.1957 6.05357 22.6521 5 20 5C17.3478 5 14.8043 6.05357 12.9289 7.92893C11.0535 9.80429 9.99996 12.3478 9.99996 15V26.6667H4.99996C4.1159 26.6667 3.26806 26.3155 2.64294 25.6904C2.01782 25.0652 1.66663 24.2174 1.66663 23.3333V16.6667C1.66663 15.7826 2.01782 14.9348 2.64294 14.3096C3.26806 13.6845 4.1159 13.3333 4.99996 13.3333H6.76996C7.17668 10.1115 8.74509 7.14878 11.1809 5.00112C13.6167 2.85346 16.7525 1.66846 20 1.66846C23.2474 1.66846 26.3832 2.85346 28.819 5.00112C31.2548 7.14878 32.8232 10.1115 33.23 13.3333H35ZM12.9333 26.3083L14.7 23.4817C16.2884 24.4767 18.1256 25.003 20 25C21.8743 25.003 23.7115 24.4767 25.3 23.4817L27.0666 26.3083C24.9487 27.6352 22.4992 28.3372 20 28.3333C17.5007 28.3372 15.0512 27.6352 12.9333 26.3083Z"
+                fill="#F9995D"
+              />
+            </svg>
+            <h4 class="tile-heading">Best Services</h4>
+            <p class="tile-description">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+          <div class="reputation-tile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M35 13.3333C35.884 13.3333 36.7319 13.6845 37.357 14.3096C37.9821 14.9348 38.3333 15.7826 38.3333 16.6667V23.3333C38.3333 24.2174 37.9821 25.0652 37.357 25.6904C36.7319 26.3155 35.884 26.6667 35 26.6667H33.23C32.8236 29.8888 31.2554 32.852 28.8195 35C26.3837 37.148 23.2476 38.3333 20 38.3333V35C22.6521 35 25.1957 33.9464 27.071 32.0711C28.9464 30.1957 30 27.6522 30 25V15C30 12.3478 28.9464 9.80429 27.071 7.92893C25.1957 6.05357 22.6521 5 20 5C17.3478 5 14.8043 6.05357 12.9289 7.92893C11.0535 9.80429 9.99996 12.3478 9.99996 15V26.6667H4.99996C4.1159 26.6667 3.26806 26.3155 2.64294 25.6904C2.01782 25.0652 1.66663 24.2174 1.66663 23.3333V16.6667C1.66663 15.7826 2.01782 14.9348 2.64294 14.3096C3.26806 13.6845 4.1159 13.3333 4.99996 13.3333H6.76996C7.17668 10.1115 8.74509 7.14878 11.1809 5.00112C13.6167 2.85346 16.7525 1.66846 20 1.66846C23.2474 1.66846 26.3832 2.85346 28.819 5.00112C31.2548 7.14878 32.8232 10.1115 33.23 13.3333H35ZM12.9333 26.3083L14.7 23.4817C16.2884 24.4767 18.1256 25.003 20 25C21.8743 25.003 23.7115 24.4767 25.3 23.4817L27.0666 26.3083C24.9487 27.6352 22.4992 28.3372 20 28.3333C17.5007 28.3372 15.0512 27.6352 12.9333 26.3083Z"
+                fill="#F9995D"
+              />
+            </svg>
+            <h4 class="tile-heading">Best Teams</h4>
+            <p class="tile-description">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+          <div class="reputation-tile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M36.3167 28.4333L27.0667 19.1833L29.6833 16.5667L23.4333 10.3167L20.8167 12.9333L11.5667 3.68332L3.68335 11.5667L12.9333 20.8167L5.00002 28.75V35H11.25L19.1833 27.0667L28.4333 36.3167L36.3167 28.4333V28.4333ZM15.3 18.45L8.40002 11.5667L11.5667 8.39999L13.6833 10.5167L11.7 12.5L14.05 14.85L16.0333 12.8667L18.45 15.2833L15.3 18.45V18.45ZM21.55 24.7L24.7167 21.5333L27.1334 23.95L25.15 25.9333L27.5 28.2833L29.4833 26.3L31.6 28.4167L28.4333 31.5833L21.55 24.7V24.7ZM25.2217 8.53832L29.4517 4.30665L35.6983 10.5533L31.4684 14.785L25.2217 8.53832Z"
+                fill="#F9995D"
+              />
+            </svg>
+            <h4 class="tile-heading">Best Designs</h4>
+            <p class="tile-description">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section our-crew-section" id="about-us">
+        <div class="container our-crew-section-content">
+          <h2 class="section-heading-h2">Our crew</h2>
+          <ul class="our-crew-list">
+            <li data-aos="fade-right" class="our-crew-list-element">
+              <img
+                class="our-crew-list-element-image"
+                src="/assets/specialist.jpeg"
+                alt="specialist 1"
+              />
+              <div class="our-crew-list-element-content">
+                <h4 class="tile-heading">
+                  Joanna Iksińska [dział IT - jesteśmy super]
+                </h4>
+                <p class="tile-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel massa et lacus egestas cursus a non magna. Fusce
+                  scelerisque blandit nunc, id malesuada ex lobortis a. Integer
+                  felis nisi, tempor elementum lorem in, varius pellentesque
+                  ligula. Duis efficitur lacinia enim, non tincidunt libero
+                  ultrices in.
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-left" class="our-crew-list-element">
+              <img
+                class="our-crew-list-element-image"
+                src="/assets/specialist.jpeg"
+                alt="specialist 1"
+              />
+              <div class="our-crew-list-element-content">
+                <h4 class="tile-heading">
+                  Joanna Iksińska [dział IT - jesteśmy super]
+                </h4>
+                <p class="tile-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel massa et lacus egestas cursus a non magna. Fusce
+                  scelerisque blandit nunc, id malesuada ex lobortis a. Integer
+                  felis nisi, tempor elementum lorem in, varius pellentesque
+                  ligula. Duis efficitur lacinia enim, non tincidunt libero
+                  ultrices in.
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-right" class="our-crew-list-element">
+              <img
+                class="our-crew-list-element-image"
+                src="/assets/specialist.jpeg"
+                alt="specialist 1"
+              />
+              <div class="our-crew-list-element-content">
+                <h4 class="tile-heading">
+                  Joanna Iksińska [dział IT - jesteśmy super]
+                </h4>
+                <p class="tile-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel massa et lacus egestas cursus a non magna. Fusce
+                  scelerisque blandit nunc, id malesuada ex lobortis a. Integer
+                  felis nisi, tempor elementum lorem in, varius pellentesque
+                  ligula. Duis efficitur lacinia enim, non tincidunt libero
+                  ultrices in.
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-left" class="our-crew-list-element">
+              <img
+                class="our-crew-list-element-image"
+                src="/assets/specialist.jpeg"
+                alt="specialist 1"
+              />
+              <div class="our-crew-list-element-content">
+                <h4 class="tile-heading">
+                  Joanna Iksińska [dział IT - jesteśmy super]
+                </h4>
+                <p class="tile-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel massa et lacus egestas cursus a non magna. Fusce
+                  scelerisque blandit nunc, id malesuada ex lobortis a. Integer
+                  felis nisi, tempor elementum lorem in, varius pellentesque
+                  ligula. Duis efficitur lacinia enim, non tincidunt libero
+                  ultrices in.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container animation-section">
+        <div class="ball"></div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-</html>
+</html
+
